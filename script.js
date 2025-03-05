@@ -4,4 +4,8 @@ const allQuotes = [
     'Don\'t be savage'
 ];
 
-let randomQuotes;
+function showQuotes() {
+    let randomQuotes = Math.floor( Math.random() * allQuotes.length );
+
+    document.getElementById('quotes').innerHTML = allQuotes[randomQuotes];
+}
